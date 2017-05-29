@@ -1,4 +1,4 @@
-#express-seed
+# express-seed
 
 Minimal Node.js express based application for project kickstarting.
 
