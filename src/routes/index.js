@@ -4,13 +4,13 @@ const express = require('express');
 debug('configuring routes');
 
 const ErrorsMiddleware = require('../middlewares/errors');
-const IndexController = require('../controllers/index');
+const HealthyCheckController = require('../controllers/healthyCheck');
 const v1 = require('./v1');
 
 const router = express.Router();
 
 // Healthy check
-router.get('/', IndexController.index);
+router.get('/', HealthyCheckController.index);
 
 // API versions
 router.use('/v1', v1);

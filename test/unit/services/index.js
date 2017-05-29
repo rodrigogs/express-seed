@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const IndexService = require('../../../src/services/index');
+const IndexService = require('../../../src/services/v1/example');
 
 suite('IndexService', () => {
   suite('#example()', () => {
