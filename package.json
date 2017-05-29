@@ -1,0 +1,38 @@
+{
+  "name": "express-seed",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Rodrigo Gomes da Silva",
+    "email": "rodrigo.smscom@gmail.com",
+    "url": "https://github.com/rodrigogs"
+  },
+  "scripts": {
+    "start": "dotenv nodemon ./bin/www",
+    "eslint": "eslint . --ext .js",
+    "test": "mocha --ui tdd test/**/*.js",
+    "coverage": "nyc --reporter=html npm test"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.17.2",
+    "debug": "^2.6.8",
+    "express": "~4.15.3",
+    "make-dir": "^1.0.0",
+    "morgan": "^1.8.2",
+    "split": "^1.0.0",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "dotenv-cli": "^1.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "nyc": "^10.3.2"
+  }
+}
