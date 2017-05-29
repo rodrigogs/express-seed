@@ -4,7 +4,8 @@ Minimal Node.js express based application for project kickstarting.
 
 ### Setup
 ```bash
-yarn install
+$ npm install yarn -g
+$ yarn install
 ```
 ### Environment
 * dotenv is supported, just create a .env file
@@ -19,15 +20,15 @@ yarn install
 ### Usage
 Start:
 ```bash
-yarn start
+$ yarn start
 ```
 Test:
 ```bash
-yarn test
+$ yarn test
 ```
 Coverage:
 ```bash
-yarn run coverage
+$ yarn run coverage
 ```
 
 ### License
