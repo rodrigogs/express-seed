@@ -4,11 +4,15 @@ const ExampleService = require('../../services/v1/example');
 
 const ExampleController = {
 
-  index: async (req, res) => {
+  index: async (req, res, next) => {
     debug('executing index action');
 
-    const example = await ExampleService.example();
-    res.status(200).send(example);
+    try {
+      const example = await ExampleService.example();
+      res.status(200).send(example);
+    } catch (err) {
+      next(err);
+    }
   },
 
 };
